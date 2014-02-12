@@ -1,0 +1,10 @@
+_build/
+_tags
+configure
+setup.data
+setup.ml
+myocamlbuild.ml
+*/META
+*/*.mllib
+Makefile
+OCamlMakefile
