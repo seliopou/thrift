@@ -50,3 +50,27 @@ While development, you may want to install your latest build on the system to
 test against other libraries or programs. To do this, use:
 
   $ make reinstall
+
+Distribution
+------------
+
+The de facto preferred method for distributing OCaml libraries is through the
+OPAM package repository. To publish the latest package, issue a pull request
+against the following github repository:
+
+  https://github.com/ocaml/opam-repository
+
+The pull requestion should add the following directory structure and files:
+
+  package
+    |__thrift
+       |__thrift.<VERSION>
+          |__ descr
+          |__ opam
+          |__ url
+
+Templates for the following files can be found in the opam/ subdirectory of
+this library's root, with XXX(...) indicating fields that need to be filled
+out. You can find further documentation here:
+
+  http://opam.ocaml.org/doc/Packaging.html
